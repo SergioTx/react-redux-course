@@ -1,15 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const Page1 = () => {
   return <div>Page1
-    <a href="/pagetwo">page2 (BAD!!!!!)</a>
+    <Link to="/pagetwo">page2</Link>
   </div>
 }
 const Page2 = () => {
   return <div>Page2
     <button>Click me</button>
-    <a href="/">page1 (BAD!!!!!)</a>
+    <Link to="/">page1</Link>
   </div>
 }
 
