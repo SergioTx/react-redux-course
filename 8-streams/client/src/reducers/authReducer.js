@@ -1,5 +1,4 @@
 import { SIGN_IN, SIGN_OUT } from '../actions/types';
-import { bindActionCreators } from 'redux';
 
 const INITIAL_STATE = {
   isSignedIn: null,
