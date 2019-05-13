@@ -56,6 +56,8 @@ export const editStream = (id, formValues) => async (dispatch) => {
     type: EDIT_STREAM,
     payload: response.data,
   });
+  // Do some programmatic navigation back to the root route
+  history.push('/');
 };
 
 export const deleteStream = (id) => async (dispatch) => {
