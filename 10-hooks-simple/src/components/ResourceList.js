@@ -12,7 +12,7 @@ const ResourceList = ({ resource }) => {
   }, [resource]); //second argument controls if the function should be invoked
 
   return (
-    <div>{resources.length}</div>
+    <ul>{resources.map((record) => <li key={record.id}>{record.title}</li>)}</ul>
   );
 }
 
