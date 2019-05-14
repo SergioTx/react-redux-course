@@ -11,7 +11,7 @@ const ResourceList = ({ resource }) => {
 
   useEffect(() => {
     fetchResource(resource);
-  }, [resource]);
+  }, [resource]); //second argument controls if the function should be invoked
 
   return (
     <div>{resources.length}</div>
